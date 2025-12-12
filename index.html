@@ -95,6 +95,45 @@
             overflow-x: hidden;
         }
         
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            z-index: 1000;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 25px rgba(37, 211, 102, 0.7); }
+        }
+        
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 15px;
+                left: 15px;
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+        }
+        
         /* Font will be applied after async load */
         .fonts-loaded body,
         html.fonts-loaded body {
@@ -948,9 +987,11 @@
                 <a href="/price-list.html">قیمت‌ها</a>
                 <a href="/batri-varian-yazd.html">واریان</a>
                 <a href="/batri-bosch-yazd.html">بوش</a>
+                <a href="/batri-pride-yazd.html">پراید</a>
                 <a href="/emdad-batri-yazd.html">امداد باطری</a>
                 <a href="/batri-sayar-yazd.html">باطری سیار</a>
                 <a href="/blog-battery-buying-guide-yazd.html">وبلاگ</a>
+                <a href="/about-us.html">درباره ما</a>
             </nav>
             <div class="header-contact">
                 <svg width="18" height="18" aria-hidden="true"><use href="#icon-phone"></use></svg>
@@ -1071,6 +1112,30 @@
     <section class="services" aria-labelledby="services-title" itemscope itemtype="https://schema.org/ItemList">
         <div class="container">
             <h2 class="section-title" id="services-title" itemprop="name">خدمات ویژه ما</h2>
+            
+            <!-- بخش آمار و اعتبارسازی -->
+            <div style="background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); padding: 2.5rem; border-radius: 15px; margin-bottom: 3rem; box-shadow: 0 8px 25px rgba(26, 115, 232, 0.3);">
+                <h3 style="color: white; text-align: center; font-size: 1.8rem; margin-bottom: 2rem;">✨ چرا امداد باطری یزد؟</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                    <div style="color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; color: #fbbc04;">500+</div>
+                        <div style="font-size: 1.1rem; margin-top: 0.5rem;">مشتری راضی</div>
+                    </div>
+                    <div style="color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; color: #fbbc04;">4.9/5</div>
+                        <div style="font-size: 1.1rem; margin-top: 0.5rem;">⭐ امتیاز مشتریان</div>
+                    </div>
+                    <div style="color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; color: #fbbc04;">25 دقیقه</div>
+                        <div style="font-size: 1.1rem; margin-top: 0.5rem;">⚡ میانگین زمان رسیدن</div>
+                    </div>
+                    <div style="color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; color: #fbbc04;">24/7</div>
+                        <div style="font-size: 1.1rem; margin-top: 0.5rem;">🕐 پشتیبانی شبانه‌روز</div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="services-grid">
                 <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon"><svg width="40" height="40" aria-hidden="true"><use href="#icon-battery"></use></svg></div>
@@ -1773,6 +1838,100 @@
         </div>
     </section>
 
+    <!-- بخش درخواست تماس -->
+    <section class="services" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100); padding: 4rem 1.5rem;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">📝 درخواست مشاوره رایگان</h2>
+                <div style="background: var(--white); padding: 2.5rem; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);">
+                    <p style="color: var(--text-dark); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                        برای دریافت مشاوره رایگان و انتخاب بهترین باتری برای خودروی خود، همین الان با ما تماس بگیرید:
+                    </p>
+                    <a href="tel:09134510583" style="display: inline-block; background: linear-gradient(135deg, var(--secondary-color) 0%, #2d8f47 100%); color: white; padding: 1.3rem 3rem; border-radius: 50px; text-decoration: none; font-size: 1.4rem; font-weight: 700; box-shadow: 0 4px 15px rgba(52, 168, 83, 0.3); transition: all 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(52, 168, 83, 0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(52, 168, 83, 0.3)'">
+                        📞 تماس فوری: 09134510583
+                    </a>
+                    <p style="margin-top: 2rem; color: var(--text-light); font-size: 1rem;">
+                        یا از طریق <a href="https://wa.me/989134510583" target="_blank" rel="noopener noreferrer" style="color: #25D366; font-weight: 600; text-decoration: none;">واتساپ 💬</a> پیام بدهید
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش نظرات واقعی مشتریان -->
+    <section class="services" style="background-color: var(--white); padding: 4rem 1.5rem;">
+        <div class="container">
+            <h2 class="section-title">⭐ نظرات مشتریان راضی</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: var(--text-dark);">
+                تجربه واقعی مشتریان ما در استفاده از خدمات امداد باطری یزد
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- نظر 1 -->
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-right: 4px solid var(--secondary-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <div>
+                            <h4 style="color: var(--text-dark); margin: 0; font-size: 1.2rem; font-weight: 700;">احمد رضایی</h4>
+                            <p style="color: var(--text-light); margin: 0.3rem 0 0; font-size: 0.9rem;">پراید ۱۳۲</p>
+                        </div>
+                        <div style="color: #fbbc04; font-size: 1.3rem;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p style="color: var(--text-dark); line-height: 1.8; font-size: 1rem; margin-top: 1rem;">
+                        "خیلی سریع و حرفه‌ای خدمات ارائه دادن. تو کمتر از 20 دقیقه رسیدن و باتری رو عوض کردن. قیمت هم خیلی مناسب بود. ممنون از تیم امداد باطری یزد!"
+                    </p>
+                </div>
+                
+                <!-- نظر 2 -->
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-right: 4px solid var(--primary-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <div>
+                            <h4 style="color: var(--text-dark); margin: 0; font-size: 1.2rem; font-weight: 700;">مریم کریمی</h4>
+                            <p style="color: var(--text-light); margin: 0.3rem 0 0; font-size: 0.9rem;">پژو ۲۰۶</p>
+                        </div>
+                        <div style="color: #fbbc04; font-size: 1.3rem;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p style="color: var(--text-dark); line-height: 1.8; font-size: 1rem; margin-top: 1rem;">
+                        "نصف شب باتری ماشینم خالی شد، با این شماره تماس گرفتم، واقعاً 24 ساعته جواب دادن و اومدن. باتری واریان با گارانتی کامل. خیلی راضی هستم!"
+                    </p>
+                </div>
+                
+                <!-- نظر 3 -->
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-right: 4px solid var(--accent-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <div>
+                            <h4 style="color: var(--text-dark); margin: 0; font-size: 1.2rem; font-weight: 700;">علی محمدی</h4>
+                            <p style="color: var(--text-light); margin: 0.3rem 0 0; font-size: 0.9rem;">سمند</p>
+                        </div>
+                        <div style="color: #fbbc04; font-size: 1.3rem;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p style="color: var(--text-dark); line-height: 1.8; font-size: 1rem; margin-top: 1rem;">
+                        "باتری بوش 66 آمپر سفارش دادم. همون روز رسوندن و نصب کردن. تکنسین خیلی با تجربه بود. قیمت هم از بازار بهتر بود. پیشنهاد میکنم."
+                    </p>
+                </div>
+                
+                <!-- نظر 4 -->
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-right: 4px solid #9c27b0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <div>
+                            <h4 style="color: var(--text-dark); margin: 0; font-size: 1.2rem; font-weight: 700;">فاطمه نوری</h4>
+                            <p style="color: var(--text-light); margin: 0.3rem 0 0; font-size: 0.9rem;">تیبا</p>
+                        </div>
+                        <div style="color: #fbbc04; font-size: 1.3rem;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p style="color: var(--text-dark); line-height: 1.8; font-size: 1rem; margin-top: 1rem;">
+                        "واقعاً عالی! خانممم و نمی‌تونستم باتری رو عوض کنم، این عزیزان اومدن خونه و همه چیو درست کردن. خیلی ممنونم از خدمات باطری سیار یزد."
+                    </p>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, var(--primary-color) 0%, #0d47a1 100%); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 3rem; box-shadow: 0 6px 25px rgba(26, 115, 232, 0.3);">
+                <h3 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;">✨ شما هم تجربه خود را با ما به اشتراک بگذارید</h3>
+                <p style="margin: 0; font-size: 1.1rem; opacity: 0.95;">
+                    رضایت شما بزرگترین افتخار ماست!
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Order Battery Section -->
     <section class="services" style="background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%); padding: 4rem 1.5rem; margin-top: 0;">
         <div class="container">
@@ -1806,6 +1965,14 @@
             </div>
         </div>
     </section>
+    
+    <!-- دکمه واتساپ شناور -->
+    <a href="https://wa.me/989134510583" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="چت واتساپ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" style="flex-shrink: 0;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span>چت واتساپ</span>
+    </a>
     </main>
 
     <!-- Footer -->

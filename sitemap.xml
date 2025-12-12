@@ -67,5 +67,21 @@
         <priority>0.80</priority>
     </url>
     
+    <!-- صفحات خودرو محور -->
+    <url>
+        <loc>https://emdadbatri-yazd54.ir/batri-pride-yazd.html</loc>
+        <lastmod>2024-12-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- صفحه درباره ما -->
+    <url>
+        <loc>https://emdadbatri-yazd54.ir/about-us.html</loc>
+        <lastmod>2024-12-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
 </urlset>
 
