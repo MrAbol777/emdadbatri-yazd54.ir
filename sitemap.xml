@@ -31,9 +31,40 @@
     <!-- صفحه فرود: خدمات سیار یزد -->
     <url>
         <loc>https://emdadbatri-yazd54.ir/khadamat-sayar-yazd.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <lastmod>2024-12-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+    
+    <!-- صفحه قیمت‌گذاری -->
+    <url>
+        <loc>https://emdadbatri-yazd54.ir/price-list.html</loc>
+        <lastmod>2024-12-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
+    <!-- صفحات برند باتری -->
+    <url>
+        <loc>https://emdadbatri-yazd54.ir/batri-varian-yazd.html</loc>
+        <lastmod>2024-12-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <url>
+        <loc>https://emdadbatri-yazd54.ir/batri-bosch-yazd.html</loc>
+        <lastmod>2024-12-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- وبلاگ -->
+    <url>
+        <loc>https://emdadbatri-yazd54.ir/blog-battery-buying-guide-yazd.html</loc>
+        <lastmod>2024-12-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
     </url>
     
 </urlset>
