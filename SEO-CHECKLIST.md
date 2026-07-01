@@ -67,7 +67,7 @@
 
 - ✅ **WebSite Schema** (در index.html)
   - اطلاعات کامل وب‌سایت
-  - SearchAction برای جستجو
+  - بدون SearchAction چون جستجوی داخلی فعال وجود ندارد
 
 - ✅ **Organization Schema** (در index.html)
   - اطلاعات سازمان
